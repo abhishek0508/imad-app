@@ -13,15 +13,6 @@ app.get('/counter', function (req, res) {
     counter = counter+1;
   res.send(counter.toString());
 });
-app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
-app.get('/article-two', function(req,res){
-    res.send("Article two requested will be served here");
-});
-app.get('/article-three', function(req,res){
-    res.send("Article three requested will be served here");
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
