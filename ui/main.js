@@ -15,7 +15,7 @@ butto.onclick = function(){
                 span.innerHTML = counter.toString();
             }
         }
-    }
+    };
     
     request.open('GET','http://abhishekcool0508.imad.hasura-app.io/counter',true);
     request.send(null);
