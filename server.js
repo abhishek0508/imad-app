@@ -10,9 +10,9 @@ app.get('/', function (req, res) {
 });
 
 var counter =0;
-app.get('/ui/counter.html',function(req, res){
+app.get('/ui/counter',function(req, res){
     counter = counter+1;
-    res.send(counter);
+    res.send(counter.toString());
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
